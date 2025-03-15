@@ -13,9 +13,26 @@ public class Main {
         System.out.println("ULTIMO: " + lista.getUltimo().getValor());
 
         //Pegando valores da lista pela posição.
-        System.out.println("Pegando Elemento na posição 1°: " + lista.get(0).getValor());
-        System.out.println("Pegando Elemento na posição 2°: " + lista.get(1).getValor());
-        System.out.println("Pegando Elemento na posição 3°: " + lista.get(2).getValor());
-        System.out.println("Pegando Elemento na posição 4°: " + lista.get(3).getValor());
+        for(int i=0; i < lista.getTamanho(); i++){
+            System.out.println(lista.get(i).getValor());
+        }
+
+        //Removendo elementos da lista.
+        lista.remover("CE");
+        lista.remover("AC");
+        lista.remover("BA");
+        lista.remover("DF");
+        lista.adicionar("PARAÍBA MASCULINA");
+        lista.adicionar("MULHER MACHO");
+        lista.adicionar("SIM SINHÔ");
+        lista.remover("PARAÍBA MASCULINA");
+        lista.remover("SIM SINHÔ");
+        System.out.println("Removendo elementos...");
+        for(int i=0; i < lista.getTamanho(); i++){
+            System.out.println(lista.get(i).getValor());
+        }
+        System.out.println("TAMANHO: " + lista.getTamanho());
+
+
     }
 }
