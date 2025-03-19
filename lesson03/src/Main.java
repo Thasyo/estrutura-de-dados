@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         //Lista Ligada ou Lista Encadeada
-        ListaLigada lista = new ListaLigada();
+        ListaLigada<String> lista = new ListaLigada<String>();
 
         //Adicionando Elementos à Lista.
         lista.adicionar("AC");
