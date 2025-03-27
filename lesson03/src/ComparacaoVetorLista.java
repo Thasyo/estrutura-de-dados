@@ -43,8 +43,9 @@ public class ComparacaoVetorLista {
 
         //lista
         tempoInicial = System.currentTimeMillis();
-        for (int i = 0; i < lista.getTamanho(); i++){
-            lista.get(i);
+        IteratorListaLigada<Integer> iterator = lista.getIterator();
+        while(iterator.temProximo()){
+            iterator.getProximo();
         }
         tempoFinal = System.currentTimeMillis();
 
